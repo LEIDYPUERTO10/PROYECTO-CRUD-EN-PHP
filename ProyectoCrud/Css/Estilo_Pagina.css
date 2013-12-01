@@ -1,0 +1,102 @@
+@CHARSET "ISO-8859-1";
+#regresar{
+  position:absolute;
+  top:300px;
+  left:20px;
+}
+
+#Botones{
+  position:absolute;
+  top:300px;
+  left:60px;
+  width:150px;/* ancho*/
+  height:600px;/* alto*/
+}
+
+
+#busqueda{
+  position:absolute;
+  text-align:center;/* alineado*/
+  font-size: 20px; 
+  color: #000000;
+  top:70px;
+  left:800px;
+  font-style:normal;
+  width:590px;/* ancho*/
+  height:1000px;/* alto*/
+
+}
+
+
+.simboloEscudo{
+	width: 200px;
+	height: 150px;
+}
+#imagenEscudo{
+	position: absolute;
+	top:20px;
+	left: 600px;
+}
+#imagenTitulo{
+	position: absolute;
+	top:20px;
+	left: 1050px;
+}
+.simboloTitulo{
+	width:500px;
+	height: 150px;
+}
+
+
+.simboloEscudo{
+	width: 200px;
+	height: 150px;
+}
+
+.simboloTitulo{
+	width:500px;
+	height: 150px;
+}
+
+#imagenEscudo{
+	position: absolute;
+	top:20px;
+	left: 250px;
+}
+
+#imagenTitulo{
+	position: absolute;
+	top:20px;
+	left: 500px;
+}
+#texto{
+	position: absolute;
+	top: 200px;
+	left: 300px;
+	color: white;
+	text-align: justify;
+	width: 900px;
+}
+
+.textosImportantes{
+	color: #66FF33;	
+}
+#lblInformacion{
+	color: #66CC99;
+	position: absolute;
+	top: 970px;
+	left: 600px;
+	text-align: center;
+}
+
+#datos{
+  position:absolute;
+  text-align:center;
+  font-size: 20px; 
+  color: #000000;
+  top:200px;
+  left:400px;
+  font-style:normal;
+  width:600px;
+  height:788px;
+}
