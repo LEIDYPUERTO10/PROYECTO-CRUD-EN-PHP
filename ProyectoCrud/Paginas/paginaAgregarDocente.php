@@ -89,7 +89,7 @@ $cs3=mysql_query($sql3,$cn);
 <td><input type="text" name="txtaped"  value="<?php echo $var1?>"/></td>
 </tr>
 
-<td>Tipo Docuemnto:</td>
+<td>Tipo Documento:</td>
 <td><select name="cbottdd" id="lista" onclick="activa(this.value)">
 <option >TI</option>
 <option >CC</option>

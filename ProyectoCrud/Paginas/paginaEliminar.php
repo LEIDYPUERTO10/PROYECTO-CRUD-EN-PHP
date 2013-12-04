@@ -143,7 +143,7 @@ if (isset ( $_POST ["btn1"] )) {
 					</tr>
 
 					<tr>
-						<td>Fecha Nacimiento Niño::</td>
+						<td>Fecha Nacimiento Niño:</td>
 						<td><input type="text" name="txtfec" value="<?php echo $var9?>" /></td>
 					</tr>
 
