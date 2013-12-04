@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<!--Esta es la pagina donde se muestra la tabla de datos general-->
+
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
@@ -21,19 +21,10 @@
 		<img class="simboloEscudo" src="../Imagenes/escudo.png">
 	</div>
 
-
-
-	<!--en esta parte empezamos a trabajar lo referente a php deduciendo esto por la simbologia utlizada
- dentro del siguiente codigo phg se inicia llamando la conexcion realizada entre la base de datos y el archivo .php
- mediante el comando include-->		
 <?php
 include ("../conexion.php");
 ?>
 
-	<!--esta parte de codigo inicia con la definicion de 15 variables, seguido de una consulta la cual arroja como resultado
-todas las personas existenten en la base de datos junto con sus datos, estos datos se almacenan en una tabla mediante un
-bucle while y utlizando un comando mysql que me extrae los datos de la consulta, para poder mostrarlos en dicha tabla
--->
 	<div id="datos1" >		
 <?php
 
@@ -154,7 +145,7 @@ while ( $resul = mysql_fetch_array ( $cs ) ) {
 		}
 	}
 	
-	if ($var10 != null) {
+	if ($var10 != null && $var6 == 'D') {
 		$sql1 = "select nombre_especialidad from especialidades where id_especialidad='$var10'";
 		$cs1 = mysql_query ( $sql1, $cn );
 		while ( $valor = mysql_fetch_array ( $cs1 ) ) {
@@ -162,7 +153,7 @@ while ( $resul = mysql_fetch_array ( $cs ) ) {
 		}
 	}
 	
-	if ($var11 != null) {
+	if ($var11 != null && $var6 == 'N') {
 		$sql1 = "select nombre_grado from grados where id_grado='$var11'";
 		$cs1 = mysql_query ( $sql1, $cn );
 		while ( $valor = mysql_fetch_array ( $cs1 ) ) {
@@ -177,7 +168,7 @@ while ( $resul = mysql_fetch_array ( $cs ) ) {
 			$var20 = $valor [0];
 		}
 	}
-	if ($var13 != null) {
+	if ($var13 != null && $var7 == 'E') {
 		$sql1 = "select nombre_carrera from carreras where id_carrera='$var13'";
 		$cs1 = mysql_query ( $sql1, $cn );
 		while ( $valor = mysql_fetch_array ( $cs1 ) ) {
@@ -185,7 +176,7 @@ while ( $resul = mysql_fetch_array ( $cs ) ) {
 		}
 	}
 	
-	if ($var14 != null) {
+	if ($var14 != null && $var7 == 'A') {
 		$sql1 = "select nombre_dependencia from dependencias where id_dependencia='$var14'";
 		$cs1 = mysql_query ( $sql1, $cn );
 		while ( $valor = mysql_fetch_array ( $cs1 ) ) {
@@ -218,4 +209,3 @@ echo "</table>";
 
 </body>
 </html>
-<!--en esta parte se cierran las etiquetas del codigo y se finaliza esta pagina-->
