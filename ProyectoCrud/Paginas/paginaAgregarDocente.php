@@ -8,23 +8,24 @@
 </head>
 
 <body background="../Imagenes/fondoPantalla.jpg">
+        <!--en esta parte se muestra el boton regresar el cual mediante un href:PaginaInicio nos
+lleva a la pagina principal solo con un click-->
 	<div id=regresar>
 		<center>
-			<a style=""> <img src="../Imagenes/Regresar.png" border="0"
-				height="80" width="100" /></a></br> 
+			<a style="" href="../index.php"><img src="../Imagenes/Regresar.png"
+				border="0" height="80" width="100" /></a></br>
 		</center>
 	</div>
 
-
-	<div id="imagenTitulo">
-		<img class="simboloTitulo" src="../Imagenes/tituloAgregarDocente.jpg">
-	</div>
-	<div id="imagenEscudo">
-		<img class="simboloEscudo" src="../Imagenes/escudo.png">
-	</div>
-	
-	<?php
-include("conexion.php");
+        <div id="imagenTitulo">
+                <img class="simboloTitulo" src="../Imagenes/tituloAgregarDocente.jpg">
+        </div>
+        <div id="imagenEscudo">
+                <img class="simboloEscudo" src="../Imagenes/escudo.png">
+        </div>
+        
+        <?php
+include("../conexion.php");
 ?>
 
 <?php
@@ -39,29 +40,29 @@ $var7="";
 
 
 if(isset($_POST["btn1"])){
-	$btn=$_POST["btn1"];
-	
-		if($btn=="Agregar"){
+        $btn=$_POST["btn1"];
+        
+                if($btn=="Agregar"){
                 $docd=$_POST["txtdocd"];
-		$nomd=$_POST["txtnomd"];
-		$aped=$_POST["txtaped"];
+                $nomd=$_POST["txtnomd"];
+                $aped=$_POST["txtaped"];
                 $dird=$_POST["txtdir"];
                 $tper='D';
-		$lug=$_POST["cbotlug"];
+                $lug=$_POST["cbotlug"];
                 $teld=$_POST["txtteld"];
                 $tdocd=$_POST["cbottdd"];
-		$espd=$_POST["cbotesp"];
-		if($docd==""  || $nomd=="" || $aped==""   || $dird==""   || $espd==null  || $lug==null){
-		echo "<script> alert('Por Favor Complete Todos Los Campos');</script>";	
-		}else{
+                $espd=$_POST["cbotesp"];
+                if($docd==""  || $nomd=="" || $aped==""   || $dird==""   || $espd==null  || $lug==null){
+                echo "<script> alert('Por Favor Complete Todos Los Campos');</script>";        
+                }else{
                 $sql="insert into personas values ('$docd','$nomd','$aped','$teld','$dird','$tdocd','$tper',null,null,null,'$espd',null,'$lug',null,null)";
-		$cs=mysql_query($sql,$cn);
-		echo "<script> alert('La Persona Se Agrego Satisfactoriamente');</script>";
-		}
-		
-		}
-		
-	}
+                $cs=mysql_query($sql,$cn);
+                echo "<script> alert('La Persona Se Agrego Satisfactoriamente');</script>";
+                }
+                
+                }
+                
+        }
         
 
 $sql2="select id_lugar,nombre_lugar from lugares order by nombre_lugar asc";
@@ -73,7 +74,7 @@ $cs3=mysql_query($sql3,$cn);
 ?>
 
 <div id=datos>
-	
+        
 <form name="fad" action="" method="post" id="formulario">
 <table border="3" bgcolor= "#FFFFFF">
 
@@ -147,7 +148,7 @@ while($fila=mysql_fetch_row($cs3)){
 
 </table>
 <input type="submit" name="btn1"value="Agregar"/>
-</form>	
+</form>        
 </div>
 </body>
 </html>

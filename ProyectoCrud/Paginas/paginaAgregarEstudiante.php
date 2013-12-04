@@ -8,10 +8,12 @@
 </head>
 
 <body background="../Imagenes/fondoPantalla.jpg">
+	<<!--en esta parte se muestra el boton regresar el cual mediante un href:PaginaInicio nos
+lleva a la pagina principal solo con un click-->
 	<div id=regresar>
 		<center>
-			<a style="" > <img src="../Imagenes/Regresar.png"
-				border="0" height="80" width="100" /></a></br>
+			<a style="" href="../index.php"><img src="../Imagenes/Regresar.png"
+				border="0" height="80" width="100" /></a></br> 
 		</center>
 	</div>
 
@@ -25,7 +27,7 @@
 	</div>
 	
 	<?php
-include("conexion.php");
+include("../conexion.php");
 ?>
 
 <?php

@@ -10,8 +10,8 @@
 <body background="../Imagenes/fondoPantalla.jpg">
 	<div id=regresar>
 		<center>
-			<a style=""> <img src="../Imagenes/Regresar.png" border="0"
-				height="80" width="100" /></a>
+			<a style="" href="../index.php"><img src="../Imagenes/Regresar.png"
+				border="0" height="80" width="100" /></a></br> 
 		</center>
 	</div>
 
@@ -23,7 +23,7 @@
 		<img class="simboloEscudo" src="../Imagenes/escudo.png">
 	</div>
 <?php
-include ("conexion.php");
+include ("../conexion.php");
 ?>
 
 
@@ -85,7 +85,7 @@ if (isset ( $_POST ["btn1"] )) {
 
 
 
-<div id=datos1>
+<div id=datos>
 		<form name="fm" action="" method="post">
 			<center>
 				<table border="3" bgcolor="#FFFFFF">

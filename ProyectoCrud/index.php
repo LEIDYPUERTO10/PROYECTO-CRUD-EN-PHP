@@ -17,12 +17,16 @@
 	</div>
 	
 	<div id="Botones">
-		<a style=""> <img src="Imagenes/Agregar.png" border="0"
-			height="120" width="120" /></a></br> </br> </br> <a style=""> <img
-			src="Imagenes/Agregar.png" border="0" height="120" width="120" /></a></br> </br> </br>
-		<a style=""> <img src="Imagenes/eliminar.png" border="0"
-			height="120" width="120" /></a></br> </br> </br> <a style=""> <img
-			src="Imagenes/Modificar.png" border="0" height="120" width="120" /></a></br>
+		<a style="" href="Paginas/paginaAgregarEstudiante.php"> <img src="Imagenes/Agregar.png" border="0"
+			height="120" width="120" /></a></br> </br> </br> 
+		<a style="" href="Paginas/paginaAgregarDocente.php"> <img src="Imagenes/Agregar.png" border="0"
+		 height="120" width="120" /></a></br> </br> </br>
+		<a style="" href="Paginas/paginaEliminar.php"> <img src="Imagenes/eliminar.png" border="0"
+			height="120" width="120" /></a></br> </br> </br> 
+		<a style="" href="Paginas/paginaModificar.php"> <img src="Imagenes/modificar.png" border="0"
+			height="120" width="120" /></a></br> </br> </br>
+		<a style="" href="Paginas/paginaMostrar.php"> <img src="Imagenes/tabla.png" border="0"
+			height="120" width="120" /></a></br> </br> </br>
 		</br> </br>
 
 	</div>
